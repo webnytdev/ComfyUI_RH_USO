@@ -50,6 +50,7 @@ models/
 │   └── FLUX.1-dev/
 │       ├── flux1-dev.safetensors
 │       └── ae.safetensors
+│       └── ....
 ├── uso/
 │   ├── assets/
 │   │   └── uso.webp
