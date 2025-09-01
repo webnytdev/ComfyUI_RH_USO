@@ -119,6 +119,11 @@ This project is licensed under Apache 2.0 License.
 - [USO HuggingFace](https://huggingface.co/bytedance-research/USO)
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 
+## 🔗 Example
+<img width="1833" height="821" alt="image" src="https://github.com/user-attachments/assets/54ab0142-ba49-45a4-8e57-32404904ce20" />
+<img width="1837" height="836" alt="image" src="https://github.com/user-attachments/assets/1a4120f4-2258-4216-b7f8-f4a6a8a36169" />
+
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.
